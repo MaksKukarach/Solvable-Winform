@@ -1,0 +1,17 @@
+C:\Users\user\source\repos\MathProblemsGenerator\MathProblemsGenerator\bin\Debug\net6.0-windows\MathProblemsGenerator.exe
+C:\Users\user\source\repos\MathProblemsGenerator\MathProblemsGenerator\bin\Debug\net6.0-windows\MathProblemsGenerator.deps.json
+C:\Users\user\source\repos\MathProblemsGenerator\MathProblemsGenerator\bin\Debug\net6.0-windows\MathProblemsGenerator.runtimeconfig.json
+C:\Users\user\source\repos\MathProblemsGenerator\MathProblemsGenerator\bin\Debug\net6.0-windows\MathProblemsGenerator.dll
+C:\Users\user\source\repos\MathProblemsGenerator\MathProblemsGenerator\bin\Debug\net6.0-windows\MathProblemsGenerator.pdb
+C:\Users\user\source\repos\MathProblemsGenerator\MathProblemsGenerator\obj\Debug\net6.0-windows\MathProblemsGenerator.csproj.AssemblyReference.cache
+C:\Users\user\source\repos\MathProblemsGenerator\MathProblemsGenerator\obj\Debug\net6.0-windows\MathProblemsGenerator.Form1.resources
+C:\Users\user\source\repos\MathProblemsGenerator\MathProblemsGenerator\obj\Debug\net6.0-windows\MathProblemsGenerator.csproj.GenerateResource.cache
+C:\Users\user\source\repos\MathProblemsGenerator\MathProblemsGenerator\obj\Debug\net6.0-windows\MathProblemsGenerator.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\user\source\repos\MathProblemsGenerator\MathProblemsGenerator\obj\Debug\net6.0-windows\MathProblemsGenerator.AssemblyInfoInputs.cache
+C:\Users\user\source\repos\MathProblemsGenerator\MathProblemsGenerator\obj\Debug\net6.0-windows\MathProblemsGenerator.AssemblyInfo.cs
+C:\Users\user\source\repos\MathProblemsGenerator\MathProblemsGenerator\obj\Debug\net6.0-windows\MathProblemsGenerator.csproj.CoreCompileInputs.cache
+C:\Users\user\source\repos\MathProblemsGenerator\MathProblemsGenerator\obj\Debug\net6.0-windows\MathProblemsGenerator.dll
+C:\Users\user\source\repos\MathProblemsGenerator\MathProblemsGenerator\obj\Debug\net6.0-windows\refint\MathProblemsGenerator.dll
+C:\Users\user\source\repos\MathProblemsGenerator\MathProblemsGenerator\obj\Debug\net6.0-windows\MathProblemsGenerator.pdb
+C:\Users\user\source\repos\MathProblemsGenerator\MathProblemsGenerator\obj\Debug\net6.0-windows\MathProblemsGenerator.genruntimeconfig.cache
+C:\Users\user\source\repos\MathProblemsGenerator\MathProblemsGenerator\obj\Debug\net6.0-windows\ref\MathProblemsGenerator.dll

@@ -9,8 +9,7 @@ namespace MathProblemsGenerator
 
         public Form1()
         {
-            mathProblem = new MathProblem((byte)random.Next(2, 6));
-            mathProblem.CreateAdditionProblem();
+            mathProblem = new MathProblem(random.Next(10, 100), (byte) random.Next(2, 6));
             InitializeComponent();
         }
 
@@ -25,11 +24,17 @@ namespace MathProblemsGenerator
 
             if (answerTextBox.Text == Convert.ToString(mathProblem.Answer))
             {
-                mathProblem.NumberOfElements = (byte) random.Next(2, 6);
-                mathProblem.CreateAdditionProblem();
+                mathProblem = new MathProblem(random.Next(10, 100), (byte)random.Next(2, 6));
                 problemTextBox.Text = mathProblem.Problem;
             }
 
+            answerTextBox.Text = "";
+        }
+
+        private void skipButton_Click(object sender, EventArgs e)
+        {
+            mathProblem = new MathProblem(random.Next(90, 100), (byte)random.Next(7, 8));
+            problemTextBox.Text = mathProblem.Problem;
             answerTextBox.Text = "";
         }
     }

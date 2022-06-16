@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Math-Problems-Generator\\MathProblemsGenerator\\MathProblemsGenerator.csproj": {}
+    "C:\\Users\\Maks\\source\\repos\\Math-Problems-Generator-main\\MathProblemsGenerator\\MathProblemsGenerator.csproj": {}
   },
   "projects": {
-    "C:\\Math-Problems-Generator\\MathProblemsGenerator\\MathProblemsGenerator.csproj": {
+    "C:\\Users\\Maks\\source\\repos\\Math-Problems-Generator-main\\MathProblemsGenerator\\MathProblemsGenerator.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Math-Problems-Generator\\MathProblemsGenerator\\MathProblemsGenerator.csproj",
+        "projectUniqueName": "C:\\Users\\Maks\\source\\repos\\Math-Problems-Generator-main\\MathProblemsGenerator\\MathProblemsGenerator.csproj",
         "projectName": "MathProblemsGenerator",
-        "projectPath": "C:\\Math-Problems-Generator\\MathProblemsGenerator\\MathProblemsGenerator.csproj",
+        "projectPath": "C:\\Users\\Maks\\source\\repos\\Math-Problems-Generator-main\\MathProblemsGenerator\\MathProblemsGenerator.csproj",
         "packagesPath": "C:\\Users\\Maks\\.nuget\\packages\\",
-        "outputPath": "C:\\Math-Problems-Generator\\MathProblemsGenerator\\obj\\",
+        "outputPath": "C:\\Users\\Maks\\source\\repos\\Math-Problems-Generator-main\\MathProblemsGenerator\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Maks\\AppData\\Roaming\\NuGet\\NuGet.Config",

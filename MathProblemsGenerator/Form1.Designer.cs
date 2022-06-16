@@ -32,6 +32,7 @@
             this.answerTextBox = new System.Windows.Forms.TextBox();
             this.answerButton = new System.Windows.Forms.Button();
             this.skipButton = new System.Windows.Forms.Button();
+            this.scoreTextBox = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // problemTextBox
@@ -47,19 +48,19 @@
             // answerTextBox
             // 
             this.answerTextBox.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.answerTextBox.Location = new System.Drawing.Point(508, 139);
+            this.answerTextBox.Location = new System.Drawing.Point(509, 139);
             this.answerTextBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.answerTextBox.Name = "answerTextBox";
-            this.answerTextBox.Size = new System.Drawing.Size(106, 43);
+            this.answerTextBox.Size = new System.Drawing.Size(100, 43);
             this.answerTextBox.TabIndex = 1;
             // 
             // answerButton
             // 
             this.answerButton.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.answerButton.Location = new System.Drawing.Point(508, 232);
+            this.answerButton.Location = new System.Drawing.Point(509, 232);
             this.answerButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.answerButton.Name = "answerButton";
-            this.answerButton.Size = new System.Drawing.Size(105, 40);
+            this.answerButton.Size = new System.Drawing.Size(99, 40);
             this.answerButton.TabIndex = 2;
             this.answerButton.Text = "ENTER";
             this.answerButton.UseVisualStyleBackColor = true;
@@ -68,19 +69,30 @@
             // skipButton
             // 
             this.skipButton.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.skipButton.Location = new System.Drawing.Point(508, 187);
+            this.skipButton.Location = new System.Drawing.Point(509, 187);
             this.skipButton.Name = "skipButton";
-            this.skipButton.Size = new System.Drawing.Size(105, 40);
+            this.skipButton.Size = new System.Drawing.Size(99, 40);
             this.skipButton.TabIndex = 3;
             this.skipButton.Text = "SKIP";
             this.skipButton.UseVisualStyleBackColor = true;
             this.skipButton.Click += new System.EventHandler(this.skipButton_Click);
+            // 
+            // scoreTextBox
+            // 
+            this.scoreTextBox.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.scoreTextBox.Location = new System.Drawing.Point(54, 105);
+            this.scoreTextBox.Name = "scoreTextBox";
+            this.scoreTextBox.ReadOnly = true;
+            this.scoreTextBox.Size = new System.Drawing.Size(76, 29);
+            this.scoreTextBox.TabIndex = 4;
+            this.scoreTextBox.Text = "IQ: 0";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(684, 340);
+            this.Controls.Add(this.scoreTextBox);
             this.Controls.Add(this.skipButton);
             this.Controls.Add(this.answerButton);
             this.Controls.Add(this.answerTextBox);
@@ -100,5 +112,6 @@
         private TextBox answerTextBox;
         private Button answerButton;
         private Button skipButton;
+        private TextBox scoreTextBox;
     }
 }

@@ -33,6 +33,8 @@
             this.answerButton = new System.Windows.Forms.Button();
             this.skipButton = new System.Windows.Forms.Button();
             this.scoreTextBox = new System.Windows.Forms.TextBox();
+            this.equationsCheckBox = new System.Windows.Forms.CheckBox();
+            this.calculationCheckBox = new System.Windows.Forms.CheckBox();
             this.SuspendLayout();
             // 
             // problemTextBox
@@ -87,11 +89,36 @@
             this.scoreTextBox.TabIndex = 4;
             this.scoreTextBox.Text = "IQ: 0";
             // 
+            // equationsCheckBox
+            // 
+            this.equationsCheckBox.AutoSize = true;
+            this.equationsCheckBox.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.equationsCheckBox.Location = new System.Drawing.Point(54, 218);
+            this.equationsCheckBox.Name = "equationsCheckBox";
+            this.equationsCheckBox.Size = new System.Drawing.Size(97, 25);
+            this.equationsCheckBox.TabIndex = 5;
+            this.equationsCheckBox.Text = "equations";
+            this.equationsCheckBox.UseVisualStyleBackColor = true;
+            this.equationsCheckBox.CheckedChanged += new System.EventHandler(this.equationsCheckBox_CheckedChanged);
+            // 
+            // calculationCheckBox
+            // 
+            this.calculationCheckBox.AutoSize = true;
+            this.calculationCheckBox.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.calculationCheckBox.Location = new System.Drawing.Point(54, 187);
+            this.calculationCheckBox.Name = "calculationCheckBox";
+            this.calculationCheckBox.Size = new System.Drawing.Size(173, 25);
+            this.calculationCheckBox.TabIndex = 6;
+            this.calculationCheckBox.Text = "calculation problems";
+            this.calculationCheckBox.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(684, 340);
+            this.Controls.Add(this.calculationCheckBox);
+            this.Controls.Add(this.equationsCheckBox);
             this.Controls.Add(this.scoreTextBox);
             this.Controls.Add(this.skipButton);
             this.Controls.Add(this.answerButton);
@@ -99,7 +126,7 @@
             this.Controls.Add(this.problemTextBox);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Form1";
-            this.Text = "  ";
+            this.Text = "Solvable";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -113,5 +140,7 @@
         private Button answerButton;
         private Button skipButton;
         private TextBox scoreTextBox;
+        private CheckBox equationsCheckBox;
+        private CheckBox calculationCheckBox;
     }
 }

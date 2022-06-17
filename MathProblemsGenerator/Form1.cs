@@ -6,10 +6,9 @@ namespace MathProblemsGenerator
         Random random = new Random(DateTime.Now.Millisecond);
         MathProblem mathProblem;
         int score;
-
+        bool isEquation;
         public Form1()
         {
-            mathProblem = new MathProblem(random.Next(10, 100), (byte) random.Next(2, 6));
             InitializeComponent();
         }
 
@@ -17,7 +16,8 @@ namespace MathProblemsGenerator
         {
             score = 0;
             this.AcceptButton = answerButton;
-            problemTextBox.Text = mathProblem.Problem;
+
+            CreateExpression();
         }
 
         private void answerButton_Click(object sender, EventArgs e)
@@ -26,12 +26,11 @@ namespace MathProblemsGenerator
             if (answerTextBox.Text == Convert.ToString(mathProblem.Answer))
             {
                 score += mathProblem.Score;
-                mathProblem = new MathProblem(random.Next(10, 100), (byte)random.Next(2, 8));
-                problemTextBox.Text = mathProblem.Problem;
+                CreateExpression();
             }
             else
             {
-                score -= 1;
+                score -= 3;
             }
 
             answerTextBox.Text = "";
@@ -40,12 +39,36 @@ namespace MathProblemsGenerator
 
         private void skipButton_Click(object sender, EventArgs e)
         {
-            mathProblem = new MathProblem(random.Next(90, 100), (byte)random.Next(2, 8));
-            problemTextBox.Text = mathProblem.Problem;
+            CreateExpression();
             answerTextBox.Text = "";
 
-            score -= 5;
+            score -= 10;
             scoreTextBox.Text = $"IQ: {score}";
+        }
+
+        private void CreateExpression()
+        {
+            mathProblem = new MathProblem(random.Next(90, 100), (byte)random.Next(2, 8));
+
+            if (calculationCheckBox.Checked || equationsCheckBox.Checked)
+            {
+                if (calculationCheckBox.Checked && equationsCheckBox.Checked)
+                {
+                    isEquation = random.Next(2) == 1;
+                }
+
+                mathProblem = new MathProblem(random.Next(90, 100), (byte)random.Next(2, 8), isEquation);
+                problemTextBox.Text = mathProblem.Problem;
+            }
+
+            else problemTextBox.Text = "Choose at least one problem type";
+
+            isEquation = equationsCheckBox.Checked;
+        }
+
+        private void equationsCheckBox_CheckedChanged(object sender, EventArgs e)
+        {
+            isEquation = equationsCheckBox.Checked;
         }
     }
 }

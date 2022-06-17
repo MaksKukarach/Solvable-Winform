@@ -16,6 +16,7 @@
         byte numberOfElements = 2;
         int upperBorder = 64;
         int lowerBorder = 1;
+        bool isEquation = false;
 
         Random random = new Random(DateTime.Now.Millisecond);
 
@@ -29,18 +30,23 @@
 
         List<Operations> operations = new List<Operations>();
 
-        public MathProblem(int answer, byte numberOfElements)
+        public MathProblem(int answer, byte numberOfElements, bool isEquation = false)
         {
             this.answer = answer;
             this.numberOfElements = numberOfElements;
+            this.isEquation = isEquation;
+
             CreateProblem();
+            if (isEquation) TransformIntoEquation();
             CalculateScore();
+
+            problem = String.Join("", problemList);
         }
 
         private void CreateProblem()
         {
             problemList.Add($"{answer}");
-            problemList.Add(" ");
+            problemList.Add("");
 
             for (int i = 2; i <= numberOfElements; i++)
             {
@@ -82,8 +88,27 @@
                 }
                     
             }
+        }
 
-            problem = String.Join("", problemList);
+        private void TransformIntoEquation()
+        {
+            int temp = answer;
+
+            while(true)
+            {
+                int i = random.Next(problemList.Count);
+
+                if (int.TryParse(problemList[i], out int number))
+                {
+                    answer = number;
+                    problemList[i] = "x";
+                    break;
+                }
+                    
+            }
+
+            problemList.Add(" = ");
+            problemList.Add($"{temp}");
         }
 
         private List<string> RepresentRandomly(int number, string symbolBefore, string symbolAfter, List<Operations> operations)
@@ -161,19 +186,23 @@
 
         private void CalculateScore()
         {
-            int result = 0;
 
-            foreach(char c in problem)
+            foreach(string element in problemList)
             {
-                if (c == '+' || c == '-')
-                    result += 1;
-                else if (c == '*')
-                    result += 3;
-                else if (c == ':')
-                    result += 3;
+                if (int.TryParse(element, out int n))
+                {
+                    if (n < 10) score += 1;
+                    else if (n < 100) score += 2;
+                    else score += 3;
+                }
             }
 
-            score = result;
+            if (isEquation) score *= 2;
+        }
+
+        private int PickRandomNumber(List<string> problemList)
+        {
+            throw new NotImplementedException();
         }
 
         public void PrintInfo()

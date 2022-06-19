@@ -1,0 +1,4 @@
+max  48
+gosha  -1354
+Margaret  0
+Nata  0

@@ -49,3 +49,4 @@ C:\Math-Problems-Generator\MathProblemsGenerator\obj\Debug\net6.0-windows\refint
 C:\Math-Problems-Generator\MathProblemsGenerator\obj\Debug\net6.0-windows\MathProblemsGenerator.pdb
 C:\Math-Problems-Generator\MathProblemsGenerator\obj\Debug\net6.0-windows\MathProblemsGenerator.genruntimeconfig.cache
 C:\Math-Problems-Generator\MathProblemsGenerator\obj\Debug\net6.0-windows\ref\MathProblemsGenerator.dll
+C:\Users\user\source\repos\MathProblemsGenerator\MathProblemsGenerator\obj\Debug\net6.0-windows\MathProblemsGenerator.Properties.Resources.resources

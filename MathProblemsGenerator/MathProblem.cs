@@ -65,10 +65,14 @@
                             //operations = new List<Operations> { Operations.Divide, Operations.Multiply };
                             operations = new List<Operations> { Operations.Add, Operations.Subtract };
 
-                            if (FindDivisors(number).Count != 0) operations.Add(Operations.Multiply);
+                            if (FindDivisors(number).Count != 0)
+                            {
+                                operations.Add(Operations.Multiply);
+                                operations.Add(Operations.Multiply);
+                            }
+                                
                             if (number <= upperBorder)
                             {
-                                operations.Add(Operations.Divide);
                                 operations.Add(Operations.Divide);
                             }
 
@@ -158,8 +162,6 @@
         {
             int first = random.Next(lowerBorder + 1, 11 - (int) Math.Sqrt(number));
             int second = number * first;
-            if (AreParenthesesRequired(symbolBefore, symbolAfter))
-                return new List<string> { "(", $"{second}", ":", $"{first}", ")" };
             return new List<string> { $"{second}", ":", $"{first}" };
         }
 

@@ -8,19 +8,19 @@
     "net6.0-windows7.0": []
   },
   "packageFolders": {
-    "C:\\Users\\user\\.nuget\\packages\\": {}
+    "C:\\Users\\Maks\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\user\\source\\repos\\MathProblemsGenerator\\MathProblemsGenerator\\MathProblemsGenerator.csproj",
+      "projectUniqueName": "C:\\Users\\Maks\\source\\repos\\Math-Problems-Generator\\MathProblemsGenerator\\MathProblemsGenerator.csproj",
       "projectName": "MathProblemsGenerator",
-      "projectPath": "C:\\Users\\user\\source\\repos\\MathProblemsGenerator\\MathProblemsGenerator\\MathProblemsGenerator.csproj",
-      "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\user\\source\\repos\\MathProblemsGenerator\\MathProblemsGenerator\\obj\\",
+      "projectPath": "C:\\Users\\Maks\\source\\repos\\Math-Problems-Generator\\MathProblemsGenerator\\MathProblemsGenerator.csproj",
+      "packagesPath": "C:\\Users\\Maks\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Maks\\source\\repos\\Math-Problems-Generator\\MathProblemsGenerator\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Maks\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
